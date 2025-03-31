@@ -1,0 +1,50 @@
+version: "3.8"
+
+services:
+    simulation:
+        build: ./docker/simulation
+        container_name: simulation
+        network_mode: "host"
+        environment:
+            - ROS_DOMAIN_ID=1
+        stdin_open: true
+        # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg simulation.launch.py"]
+        volumes:
+            - maps:/data/maps
+    
+    task_manager:
+        build: ./docker/task_manager
+        container_name: task_manager
+        network_mode: "host"
+        environment:
+            - ROS_DOMAIN_ID=1
+        stdin_open: true
+        # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg task_manager.launch.py"]
+        volumes:
+            - maps:/data/maps
+        
+    delivery_bot:
+        build: ./docker/delivery_bot
+        container_name: delivery_bot
+        network_mode: "host"
+        environment:
+            - ROS_DOMAIN_ID=1
+        stdin_open: true
+        # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg delivery_bot.launch.py"]
+        volumes:
+            - maps:/data/maps
+    
+    picker_bot:
+        build: ./docker/picker_bot
+        container_name: picker_bot
+        network_mode: "host"
+        environment:
+            - ROS_DOMAIN_ID=1
+        stdin_open: true
+        # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg picker_bot.launch.py"]
+        volumes:
+            - maps:/data/maps
+    
+
+volumes:
+  maps:

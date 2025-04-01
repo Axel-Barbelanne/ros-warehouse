@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
     simulation:
         build: ./docker/simulation
@@ -11,6 +9,7 @@ services:
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg simulation.launch.py"]
         volumes:
             - maps:/data/maps
+            - ./src/warehouse_nav_pkg:/ros_ws/src/warehouse_simulation_pkg
     
     task_manager:
         build: ./docker/task_manager
@@ -22,6 +21,7 @@ services:
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg task_manager.launch.py"]
         volumes:
             - maps:/data/maps
+            - ./src/warehouse_nav_pkg:/ros_ws/src/warehouse_mission_control_pkg
         
     delivery_bot:
         build: ./docker/delivery_bot
@@ -33,6 +33,8 @@ services:
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg delivery_bot.launch.py"]
         volumes:
             - maps:/data/maps
+            - ./src/warehouse_robot_pkg:/ros_ws/src/warehouse_robot_pkg
+            - ./src/warehouse_nav_pkg:/ros_ws/src/warehouse_nav_pkg
     
     picker_bot:
         build: ./docker/picker_bot
@@ -44,6 +46,8 @@ services:
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg picker_bot.launch.py"]
         volumes:
             - maps:/data/maps
+            - ./src/warehouse_robot_pkg:/ros_ws/src/warehouse_robot_pkg
+            - ./src/warehouse_nav_pkg:/ros_ws/src/warehouse_nav_pkg
     
 
 volumes:

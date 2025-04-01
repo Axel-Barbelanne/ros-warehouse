@@ -8,5 +8,7 @@ if [ -f /ros_ws/install/setup.bash ]; then
     source /ros_ws/install/setup.bash
 fi
 
+cd /ros_ws
+
 # Run the command passed to the container (usually bash or a ROS launch file)
 exec "$@"

@@ -1,0 +1,6 @@
+[submodule "src/warehouse_simulation_pkg"]
+    path = src/warehouse_simulation_pkg
+    url = git@github.com:Axel-Barbelanne/warehouse_simulation_pkg.git
+[submodule "src/warehouse_bot_pkg"]
+    path = src/warehouse_bot_pkg
+    url = git@github.com:Axel-Barbelanne/warehouse_bot_pkg.git

@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
 
 # Copy robot package
 WORKDIR /ros_ws
-COPY . .
+# COPY . .
 
 # Build the workspace
 RUN /bin/bash -c "source /opt/ros/humble/setup.bash && colcon build"

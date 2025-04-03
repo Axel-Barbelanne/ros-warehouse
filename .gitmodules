@@ -1,6 +1,12 @@
+[submodule "src/delivery_bot_nav_pkg"]
+	path = src/delivery_bot_nav_pkg
+	url = git@github.com:Axel-Barbelanne/delivery_bot_nav_pkg.git
+[submodule "src/picker_bot_nav_pkg"]
+	path = src/picker_bot_nav_pkg
+	url = git@github.com:Axel-Barbelanne/picker_bot_nav_pkg.git
+[submodule "src/warehouse_mission_control_pkg"]
+	path = src/warehouse_mission_control_pkg
+	url = git@github.com:Axel-Barbelanne/warehouse_mission_control_pkg.git
 [submodule "src/warehouse_simulation_pkg"]
-    path = src/warehouse_simulation_pkg
-    url = git@github.com:Axel-Barbelanne/warehouse_simulation_pkg.git
-[submodule "src/warehouse_bot_pkg"]
-    path = src/warehouse_bot_pkg
-    url = git@github.com:Axel-Barbelanne/warehouse_bot_pkg.git
+	path = src/warehouse_simulation_pkg
+	url = git@github.com:Axel-Barbelanne/warehouse_simulation_pkg.git

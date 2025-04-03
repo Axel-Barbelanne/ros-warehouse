@@ -33,7 +33,7 @@ services:
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg delivery_bot.launch.py"]
         volumes:
             - maps:/data/maps
-            - ./src/warehouse_robot_pkg:/ros_ws/src/warehouse_robot_pkg
+            - ./src/warehouse_bot_pkg:/ros_ws/src/warehouse_bot_pkg
             - ./src/warehouse_nav_pkg:/ros_ws/src/warehouse_nav_pkg
     
     picker_bot:
@@ -46,7 +46,7 @@ services:
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg picker_bot.launch.py"]
         volumes:
             - maps:/data/maps
-            - ./src/warehouse_robot_pkg:/ros_ws/src/warehouse_robot_pkg
+            - ./src/warehouse_bot_pkg:/ros_ws/src/warehouse_bot_pkg
             - ./src/warehouse_nav_pkg:/ros_ws/src/warehouse_nav_pkg
     
 

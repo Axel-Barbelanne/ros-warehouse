@@ -9,7 +9,7 @@ services:
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg simulation.launch.py"]
         volumes:
             - maps:/data/maps
-            - ./src/warehouse_nav_pkg:/ros_ws/src/warehouse_simulation_pkg
+            - ./src/warehouse_simulation_pkg:/ros_ws/src/warehouse_simulation_pkg
     
     task_manager:
         build: ./docker/task_manager
@@ -21,7 +21,7 @@ services:
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg task_manager.launch.py"]
         volumes:
             - maps:/data/maps
-            - ./src/warehouse_nav_pkg:/ros_ws/src/warehouse_mission_control_pkg
+            - ./src/warehouse_mission_control_pkg:/ros_ws/src/warehouse_mission_control_pkg
         
     delivery_bot:
         build: ./docker/delivery_bot
@@ -33,8 +33,12 @@ services:
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg delivery_bot.launch.py"]
         volumes:
             - maps:/data/maps
-            - ./src/warehouse_bot_pkg:/ros_ws/src/warehouse_bot_pkg
-            - ./src/warehouse_nav_pkg:/ros_ws/src/warehouse_nav_pkg
+            - ./src/delivery_bot_nav_pkg:/ros_ws/src/delivery_bot_nav_pkg
+            - ./src/husky/husky_control:/ros_ws/src/husky_control
+            - ./src/husky/husky_description:/ros_ws/src/husky_description
+            - ./src/husky/husky_gazebo:/ros_ws/src/husky_gazebo
+            - ./src/husky/husky_msgs:/ros_ws/src/husky_msgs
+            - ./src/husky/husky_viz:/ros_ws/src/husky_viz
     
     picker_bot:
         build: ./docker/picker_bot
@@ -46,8 +50,7 @@ services:
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg picker_bot.launch.py"]
         volumes:
             - maps:/data/maps
-            - ./src/warehouse_bot_pkg:/ros_ws/src/warehouse_bot_pkg
-            - ./src/warehouse_nav_pkg:/ros_ws/src/warehouse_nav_pkg
+            - ./src/picker_bot_nav_pkg:/ros_ws/src/picker_bot_nav_pkg
     
 
 volumes:

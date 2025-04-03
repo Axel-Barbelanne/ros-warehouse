@@ -4,6 +4,8 @@ FROM osrf/ros:humble-desktop
 RUN apt-get update && apt-get install -y \
     ros-humble-navigation2 \
     ros-humble-tf2-ros \
+    ros-humble-gazebo-ros-pkgs \
+    ros-humble-gazebo-ros2-control \
     ros-humble-turtlebot4-description \
     ros-humble-turtlebot4-msgs \
     ros-humble-turtlebot4-navigation \

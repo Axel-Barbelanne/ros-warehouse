@@ -1,0 +1,178 @@
+[0.346s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/axel/workspaces/pp/ros-warehouse']
+[0.346s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/axel/workspaces/pp/ros-warehouse'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7b38c06393f0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7b38c0638070>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7b38c0638070>>)
+[0.869s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.870s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.870s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.870s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.870s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.870s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/axel/workspaces/pp/ros-warehouse'
+[0.870s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse) by extensions ['ignore', 'ignore_ament_install']
+[0.871s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse) by extension 'ignore'
+[0.871s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse) by extension 'ignore_ament_install'
+[0.871s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse) by extensions ['colcon_pkg']
+[0.871s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse) by extension 'colcon_pkg'
+[0.871s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse) by extensions ['colcon_meta']
+[0.871s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse) by extension 'colcon_meta'
+[0.871s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse) by extensions ['ros']
+[0.871s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse) by extension 'ros'
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse) by extensions ['cmake', 'python']
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse) by extension 'cmake'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse) by extension 'python'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse) by extensions ['python_setup_py']
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse) by extension 'python_setup_py'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data) by extensions ['ignore', 'ignore_ament_install']
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data) by extension 'ignore'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data) by extension 'ignore_ament_install'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data) by extensions ['colcon_pkg']
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data) by extension 'colcon_pkg'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data) by extensions ['colcon_meta']
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data) by extension 'colcon_meta'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data) by extensions ['ros']
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data) by extension 'ros'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data) by extensions ['cmake', 'python']
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data) by extension 'cmake'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data) by extension 'python'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data) by extensions ['python_setup_py']
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data) by extension 'python_setup_py'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data/urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.900s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data/urdf) by extension 'ignore'
+[0.900s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data/urdf) by extension 'ignore_ament_install'
+[0.900s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data/urdf) by extensions ['colcon_pkg']
+[0.900s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data/urdf) by extension 'colcon_pkg'
+[0.900s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data/urdf) by extensions ['colcon_meta']
+[0.900s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data/urdf) by extension 'colcon_meta'
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data/urdf) by extensions ['ros']
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data/urdf) by extension 'ros'
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data/urdf) by extensions ['cmake', 'python']
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data/urdf) by extension 'cmake'
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data/urdf) by extension 'python'
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data/urdf) by extensions ['python_setup_py']
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/data/urdf) by extension 'python_setup_py'
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker) by extension 'ignore'
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker) by extension 'ignore_ament_install'
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker) by extensions ['colcon_pkg']
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker) by extension 'colcon_pkg'
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker) by extensions ['colcon_meta']
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker) by extension 'colcon_meta'
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker) by extensions ['ros']
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker) by extension 'ros'
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker) by extensions ['cmake', 'python']
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker) by extension 'cmake'
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker) by extension 'python'
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker) by extensions ['python_setup_py']
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker) by extension 'python_setup_py'
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/delivery_bot) by extensions ['ignore', 'ignore_ament_install']
+[0.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/delivery_bot) by extension 'ignore'
+[0.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/delivery_bot) by extension 'ignore_ament_install'
+[0.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/delivery_bot) by extensions ['colcon_pkg']
+[0.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/delivery_bot) by extension 'colcon_pkg'
+[0.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/delivery_bot) by extensions ['colcon_meta']
+[0.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/delivery_bot) by extension 'colcon_meta'
+[0.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/delivery_bot) by extensions ['ros']
+[0.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/delivery_bot) by extension 'ros'
+[0.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/delivery_bot) by extensions ['cmake', 'python']
+[0.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/delivery_bot) by extension 'cmake'
+[0.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/delivery_bot) by extension 'python'
+[0.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/delivery_bot) by extensions ['python_setup_py']
+[0.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/delivery_bot) by extension 'python_setup_py'
+[0.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/picker_bot) by extensions ['ignore', 'ignore_ament_install']
+[0.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/picker_bot) by extension 'ignore'
+[0.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/picker_bot) by extension 'ignore_ament_install'
+[0.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/picker_bot) by extensions ['colcon_pkg']
+[0.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/picker_bot) by extension 'colcon_pkg'
+[0.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/picker_bot) by extensions ['colcon_meta']
+[0.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/picker_bot) by extension 'colcon_meta'
+[0.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/picker_bot) by extensions ['ros']
+[0.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/picker_bot) by extension 'ros'
+[0.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/picker_bot) by extensions ['cmake', 'python']
+[0.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/picker_bot) by extension 'cmake'
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/picker_bot) by extension 'python'
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/picker_bot) by extensions ['python_setup_py']
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/picker_bot) by extension 'python_setup_py'
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/simulation) by extension 'ignore'
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/simulation) by extension 'ignore_ament_install'
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/simulation) by extensions ['colcon_pkg']
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/simulation) by extension 'colcon_pkg'
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/simulation) by extensions ['colcon_meta']
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/simulation) by extension 'colcon_meta'
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/simulation) by extensions ['ros']
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/simulation) by extension 'ros'
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/simulation) by extensions ['cmake', 'python']
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/simulation) by extension 'cmake'
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/simulation) by extension 'python'
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/simulation) by extensions ['python_setup_py']
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/simulation) by extension 'python_setup_py'
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/task_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/task_manager) by extension 'ignore'
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/task_manager) by extension 'ignore_ament_install'
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/task_manager) by extensions ['colcon_pkg']
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/task_manager) by extension 'colcon_pkg'
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/task_manager) by extensions ['colcon_meta']
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/task_manager) by extension 'colcon_meta'
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/task_manager) by extensions ['ros']
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/task_manager) by extension 'ros'
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/task_manager) by extensions ['cmake', 'python']
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/task_manager) by extension 'cmake'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/task_manager) by extension 'python'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/task_manager) by extensions ['python_setup_py']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/docker/task_manager) by extension 'python_setup_py'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/log) by extensions ['ignore', 'ignore_ament_install']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/log) by extension 'ignore'
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/log) ignored
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src) by extensions ['ignore', 'ignore_ament_install']
+[0.908s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src) by extension 'ignore'
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src) by extension 'ignore_ament_install'
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src) by extensions ['colcon_pkg']
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src) by extension 'colcon_pkg'
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src) by extensions ['colcon_meta']
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src) by extension 'colcon_meta'
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src) by extensions ['ros']
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src) by extension 'ros'
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src) by extensions ['cmake', 'python']
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src) by extension 'cmake'
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src) by extension 'python'
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src) by extensions ['python_setup_py']
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src) by extension 'python_setup_py'
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_bot_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_bot_pkg) by extension 'ignore'
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_bot_pkg) by extension 'ignore_ament_install'
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_bot_pkg) by extensions ['colcon_pkg']
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_bot_pkg) by extension 'colcon_pkg'
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_bot_pkg) by extensions ['colcon_meta']
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_bot_pkg) by extension 'colcon_meta'
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_bot_pkg) by extensions ['ros']
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_bot_pkg) by extension 'ros'
+[0.916s] DEBUG:colcon.colcon_core.package_identification:Package '/home/axel/workspaces/pp/ros-warehouse/src/warehouse_bot_pkg' with type 'ros.ament_cmake' and name 'warehouse_bot_pkg'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_mission_control_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_mission_control_pkg) by extension 'ignore'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_mission_control_pkg) by extension 'ignore_ament_install'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_mission_control_pkg) by extensions ['colcon_pkg']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_mission_control_pkg) by extension 'colcon_pkg'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_mission_control_pkg) by extensions ['colcon_meta']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_mission_control_pkg) by extension 'colcon_meta'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_mission_control_pkg) by extensions ['ros']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_mission_control_pkg) by extension 'ros'
+[0.919s] DEBUG:colcon.colcon_core.package_identification:Package '/home/axel/workspaces/pp/ros-warehouse/src/warehouse_mission_control_pkg' with type 'ros.ament_cmake' and name 'warehouse_nav_pkg'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_nav_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_nav_pkg) by extension 'ignore'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_nav_pkg) by extension 'ignore_ament_install'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_nav_pkg) by extensions ['colcon_pkg']
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_nav_pkg) by extension 'colcon_pkg'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_nav_pkg) by extensions ['colcon_meta']
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_nav_pkg) by extension 'colcon_meta'
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_nav_pkg) by extensions ['ros']
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_nav_pkg) by extension 'ros'
+[0.921s] DEBUG:colcon.colcon_core.package_identification:Package '/home/axel/workspaces/pp/ros-warehouse/src/warehouse_nav_pkg' with type 'ros.ament_cmake' and name 'warehouse_nav_pkg'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_simulation_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_simulation_pkg) by extension 'ignore'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_simulation_pkg) by extension 'ignore_ament_install'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_simulation_pkg) by extensions ['colcon_pkg']
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_simulation_pkg) by extension 'colcon_pkg'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_simulation_pkg) by extensions ['colcon_meta']
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_simulation_pkg) by extension 'colcon_meta'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_simulation_pkg) by extensions ['ros']
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(/home/axel/workspaces/pp/ros-warehouse/src/warehouse_simulation_pkg) by extension 'ros'
+[0.923s] DEBUG:colcon.colcon_core.package_identification:Package '/home/axel/workspaces/pp/ros-warehouse/src/warehouse_simulation_pkg' with type 'ros.ament_cmake' and name 'warehouse_nav_pkg'
+[0.924s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

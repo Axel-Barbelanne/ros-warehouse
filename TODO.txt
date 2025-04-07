@@ -1,4 +1,4 @@
 - Set up simulation, with X11 fwd, all on simulation container
-    - Ensure robots work individually
-    - Set up delivery environment
-    - Teleop robots through environment
+    - make simulations work with gpu
+    - make simulations work in simulation pkg
+    - Set up delivery environment in gazebo

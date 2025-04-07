@@ -10,6 +10,7 @@
 [submodule "src/warehouse_simulation_pkg"]
 	path = src/warehouse_simulation_pkg
 	url = git@github.com:Axel-Barbelanne/warehouse_simulation_pkg.git
+	branch = main
 [submodule "src/husky"]
 	path = src/husky
 	url = git@github.com:husky/husky.git

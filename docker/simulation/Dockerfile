@@ -4,6 +4,7 @@ FROM osrf/ros:humble-desktop
 RUN apt-get update && apt-get install -y \
     ros-humble-navigation2 \
     ros-humble-tf2-ros \
+    ros-humble-xacro \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy robot package

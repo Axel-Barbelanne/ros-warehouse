@@ -6,6 +6,15 @@ RUN apt-get update && apt-get install -y \
     ros-humble-tf2-ros \
     ros-humble-gazebo-ros-pkgs \
     ros-humble-gazebo-ros2-control \
+    ros-humble-xacro \
+    ros-humble-robot-localization \
+    ros-humble-interactive-marker-twist-server \
+    ros-humble-twist-mux \
+    ros-humble-ros2-control \
+    ros-humble-diff-drive-controller \
+    ros-humble-controller-manager \
+    ros-humble-joint-state-broadcaster \
+    ros-humble-gazebo-ros-pkgs \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy robot package

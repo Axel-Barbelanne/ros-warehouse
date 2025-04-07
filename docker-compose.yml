@@ -5,11 +5,13 @@ services:
         network_mode: "host"
         environment:
             - ROS_DOMAIN_ID=1
+            - DISPLAY=${DISPLAY}
         stdin_open: true
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg simulation.launch.py"]
         volumes:
             - maps:/data/maps
             - ./src/warehouse_simulation_pkg:/ros_ws/src/warehouse_simulation_pkg
+            - /tmp/.X11-unix:/tmp/.X11-unix
     
     task_manager:
         build: ./docker/task_manager
@@ -17,11 +19,13 @@ services:
         network_mode: "host"
         environment:
             - ROS_DOMAIN_ID=1
+            - DISPLAY=${DISPLAY}
         stdin_open: true
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg task_manager.launch.py"]
         volumes:
             - maps:/data/maps
             - ./src/warehouse_mission_control_pkg:/ros_ws/src/warehouse_mission_control_pkg
+            - /tmp/.X11-unix:/tmp/.X11-unix
         
     delivery_bot:
         build: ./docker/delivery_bot
@@ -29,6 +33,7 @@ services:
         network_mode: "host"
         environment:
             - ROS_DOMAIN_ID=1
+            - DISPLAY=${DISPLAY}
         stdin_open: true
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg delivery_bot.launch.py"]
         volumes:
@@ -39,6 +44,7 @@ services:
             - ./src/husky/husky_gazebo:/ros_ws/src/husky_gazebo
             - ./src/husky/husky_msgs:/ros_ws/src/husky_msgs
             - ./src/husky/husky_viz:/ros_ws/src/husky_viz
+            - /tmp/.X11-unix:/tmp/.X11-unix
     
     picker_bot:
         build: ./docker/picker_bot
@@ -46,12 +52,13 @@ services:
         network_mode: "host"
         environment:
             - ROS_DOMAIN_ID=1
+            - DISPLAY=${DISPLAY}
         stdin_open: true
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg picker_bot.launch.py"]
         volumes:
             - maps:/data/maps
             - ./src/picker_bot_nav_pkg:/ros_ws/src/picker_bot_nav_pkg
+            - /tmp/.X11-unix:/tmp/.X11-unix
     
-
 volumes:
   maps:

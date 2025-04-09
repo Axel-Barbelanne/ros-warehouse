@@ -2,17 +2,30 @@ services:
     simulation:
         build: ./docker/simulation
         container_name: simulation
+        runtime: nvidia
+        privileged: true
         network_mode: "host"
         environment:
             - ROS_DOMAIN_ID=1
             - DISPLAY=${DISPLAY}
+            - QT_X11_NO_MITSHM=1
+            - GAZEBO_AUDIO=0
         stdin_open: true
         # command: ["bash", "-c", "source /ros_ws/install/setup.bash && ros2 launch warehouse_simulation_pkg simulation.launch.py"]
         volumes:
             - maps:/data/maps
             - ./src/warehouse_simulation_pkg:/ros_ws/src/warehouse_simulation_pkg
+            - ./src/husky/husky_description:/ros_ws/src/husky_description
+            - ./src/husky/husky_gazebo:/ros_ws/src/husky_gazebo
             - /tmp/.X11-unix:/tmp/.X11-unix
-    
+        deploy:
+            resources:
+                reservations:
+                    devices:
+                        - capabilities: [gpu]  # NVIDIA GPU passthrough
+        devices:
+            - /dev/dri  # Intel/AMD GPU passthrough
+
     task_manager:
         build: ./docker/task_manager
         container_name: task_manager

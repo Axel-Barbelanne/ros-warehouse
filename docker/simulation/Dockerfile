@@ -24,6 +24,7 @@ RUN apt-get update && apt-get install -y \
     libgl1-mesa-dri \
     libxrender1 \
     mesa-utils \
+    lsof \
     x11-apps \
     && rm -rf /var/lib/apt/lists/*
 

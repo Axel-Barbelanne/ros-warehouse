@@ -1,4 +1,3 @@
 - Set up simulation, with X11 fwd, all on simulation container
-    - make simulations work with gpu
-    - make simulations work in simulation pkg
-    - Set up delivery environment in gazebo
+    - Set up turtlebot in simulation
+    - Set up controls with separate containers in simulation

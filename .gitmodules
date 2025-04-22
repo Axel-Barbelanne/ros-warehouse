@@ -15,3 +15,6 @@
 	path = src/husky
 	url = git@github.com:husky/husky.git
 	branch = humble-devel
+[submodule "src/turtlebot4"]
+	path = src/turtlebot4
+	url = git@github.com:turtlebot/turtlebot4.git

@@ -17,6 +17,8 @@ services:
             - ./src/warehouse_simulation_pkg:/ros_ws/src/warehouse_simulation_pkg
             - ./src/husky/husky_description:/ros_ws/src/husky_description
             - ./src/husky/husky_gazebo:/ros_ws/src/husky_gazebo
+            - ./src/turtlebot4/turtlebot4_description:/ros_ws/src/turtlebot4_description
+            - ./src/turtlebot4/turtlebot4_gazebo:/ros_ws/src/turtlebot4_simulator
             - /tmp/.X11-unix:/tmp/.X11-unix
         deploy:
             resources:

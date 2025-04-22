@@ -15,8 +15,10 @@ RUN apt-get update && apt-get install -y \
     ros-humble-navigation2 \
     ros-humble-tf2-ros \
     ros-humble-xacro \
-    ros-humble-gazebo-ros-pkgs \
-    ros-humble-gazebo-ros2-control \
+    ros-humble-ros-ign \
+    ros-humble-ros-ign-gazebo \
+    ros-humble-ros-ign-bridge \
+    ros-humble-ros-ign-image \
     ros-humble-turtlebot4-description \
     ros-humble-turtlebot4-navigation \
     nvidia-container-toolkit \
